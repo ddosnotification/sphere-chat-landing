@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sphere - Next Generation Chat Platform</title>
+    <!-- External Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="loader">
+        <div class="loader-content"></div>
+    </div>
+
+    <div id="canvas-container"></div>
+
+    <div class="content">
+        <nav>
+            <div class="logo">Sphere</div>
+            <div class="nav-links">
+                <a href="#features">Features</a>
+                <a href="#showcase">Showcase</a>
+                <a href="#testimonials">Testimonials</a>
+                <a href="#pricing">Pricing</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="mobile-menu">≡</div>
+        </nav>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Chat in a New Dimension</h1>
+                <p class="hero-subtitle">Experience communication reimagined with Sphere's revolutionary 3D interface and AI-powered features. Connect, collaborate, and create like never before.</p>
+                <div class="cta-container">
+                    <a href="#" class="button button-primary">Get Started Free</a>
+                    <a href="#" class="button button-secondary">Watch Demo</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="features" id="features">
+            <h2 class="section-title">Why Choose Sphere?</h2>
+            <p class="section-subtitle">Discover how Sphere transforms everyday communication into extraordinary experiences with cutting-edge features.</p>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">👓</div>
+                    <h3 class="feature-title">3D Messaging</h3>
+                    <p class="feature-description">Immersive 3D chat environments that make every conversation memorable and engaging.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3 class="feature-title">AI Assistant</h3>
+                    <p class="feature-description">Smart AI companion that helps organize chats, schedule meetings, and translate messages instantly.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔒</div>
+                    <h3 class="feature-title">End-to-End Encryption</h3>
+                    <p class="feature-description">Military-grade encryption ensures your conversations stay private and secure.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Real-time Collaboration</h3>
+                    <p class="feature-description">Work together seamlessly with integrated tools and live sharing features.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3 class="feature-title">Global Connection</h3>
+                    <p class="feature-description">Connect with anyone, anywhere with automatic translation in over 100 languages.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Cross-Platform</h3>
+                    <p class="feature-description">Access Sphere from any device with perfect synchronization.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="showcase" id="showcase">
+            <div class="showcase-content">
+                <h2 class="showcase-title">Experience the Future</h2>
+                <p class="showcase-description">Step into a world where messages come alive. Our 3D interface transforms ordinary chats into extraordinary experiences.</p>
+                <a href="#" class="button button-secondary">Learn More</a>
+            </div>
+            <div class="mockup"></div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <h2 class="section-title">What Our Users Say</h2>
+            <p class="section-subtitle">Join thousands of satisfied users who have transformed their communication experience with Sphere.</p>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Sphere has completely transformed how our team communicates. The 3D interface makes remote work feel more personal and engaging than ever before."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Sarah Chen</h4>
+                            <p>Product Manager, TechCo</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"The AI features are incredible. It's like having a personal assistant in every chat room, making communication effortless and more productive."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>James Wilson</h4>
+                            <p>Creative Director, DesignHub</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <p class="testimonial-text">"Security was our top priority, and Sphere delivered. The encryption is top-notch while maintaining a beautiful user experience."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar"></div>
+                        <div class="author-info">
+                            <h4>Maria Garcia</h4>
+                            <p>Security Engineer, SecureNet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing" id="pricing">
+            <h2 class="section-title">Choose Your Plan</h2>
+            <p class="section-subtitle">Find the perfect plan for your communication needs.</p>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Starter</h3>
+                        <div class="price">
+                            <span>$0</span>
+                            <span class="price-period">/forever</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Basic 3D Chat Interface</li>
+                        <li>Up to 10 Team Members</li>
+                        <li>5GB Storage</li>
+                        <li>Basic AI Assistant</li>
+                    </ul>
+                    <a href="#" class="button button-primary">Get Started</a>
+                </div>
+                <div class="pricing-card featured">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Pro</h3>
+                        <div class="price">
+                            <span>$12</span>
+                            <span class="price-period">/month</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Advanced 3D Environment</li>
+                        <li>Unlimited Team Members</li>
+                        <li>50GB Storage</li>
+                        <li>Advanced AI Features</li>
+                        <li>Priority Support</li>
+                    </ul>
+                    <a href="#" class="button button-primary">Upgrade Now</a>
+                </div>
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3 class="plan-name">Enterprise</h3>
+                        <div class="price">
+                            <span>Custom</span>
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li>Custom 3D Environments</li>
+                        <li>Unlimited Everything</li>
+                        <li>Custom Integration</li>
+                        <li>Dedicated Support</li>
+                        <li>SLA Guarantee</li>
+                    </ul>
+                    <a href="#" class="button button-primary">Contact Sales</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Sphere</h3>
+                    <p>Next generation communication platform for teams who want to chat in style.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Product</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Security</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Company</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <div class="newsletter">
+                        <h3>Stay Updated</h3>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Enter your email" class="newsletter-input">
+                            <button type="submit" class="newsletter-button">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
