@@ -109,7 +109,7 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## 📧 Contact
 
-Your Name - [@ddosnotification](https://t.me/ddosnotification) - gejdos@alos.gg
+[@ddosnotification](https://x.com/ddosntfcion)
 
 Project Link: [https://github.com/ddosnotification/sphere-chat-landing](https://github.com/ddosnotification/sphere-chat-landing)
 
